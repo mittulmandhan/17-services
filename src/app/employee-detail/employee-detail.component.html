@@ -1,0 +1,11 @@
+<h2>Employee Detail</h2>
+<!-- here we are trying to access the employees object outside the class it is declare -->
+<!-- so we cannot access the employees object unless we create a copy of employees object inside the class of this component -->
+<!-- does this approach works ? -->
+<!-- yes it does -->
+<!-- but is this approach correct? -->
+<!-- No, not at all -->
+<!-- we need to use services here -->
+<ul *ngFor="let emp of employees">
+    <li>{{emp.id}}. {{emp.name}} - {{emp.age}}</li>
+</ul>
